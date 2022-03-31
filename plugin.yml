@@ -1,9 +1,14 @@
 name: Kubescape
 description: run kubescape scans against Kubernetes manifests
 author: https://github.com/rossedman
-requirements: []
 configuration:
   properties:
+    directory:
+      type: string
+      default: config
     framework:
       type: string
-  additionProperties: false
+      enum:
+        - nsa
+        - mitre
+  additionalProperties: false

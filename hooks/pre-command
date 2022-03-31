@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+set -o pipefail
+set -u
+
+main() {
+    echo '--- Setting up the environment'
+    curl -s https://raw.githubusercontent.com/armosec/kubescape/master/install.sh | /bin/bash
+}
+
+main

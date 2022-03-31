@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+set -o pipefail
+set -u
+
+main() {
+    echo '--- Formatting test data'
+}
+
+main
