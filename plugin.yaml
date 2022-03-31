@@ -1,0 +1,9 @@
+name: Kubescape
+description: run kubescape scans against Kubernetes manifests
+author: https://github.com/rossedman
+requirements: []
+configuration:
+  properties:
+    framework:
+      type: string
+  additionProperties: false
