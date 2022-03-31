@@ -15,8 +15,13 @@ main() {
     FRAMEWORK="$BUILDKITE_PLUGIN_KUBESCAPE_FRAMEWORK"
     RESULTS="$BUILDKITE_PLUGIN_KUBESCAPE_RESULTS"
 
-    kubescape scan framework ${FRAMEWORK} ${CONFIG}/**/*.yaml \
-        --format $FORMAT --output $RESULTS
+    echo "config -- $CONFIG"
+    echo "format -- $FORMAT"
+    echo "framework -- $FRAMEWORK"
+    echo "results -- $RESULTS"
+
+    kubescape scan framework "${FRAMEWORK}" "${CONFIG}/*.yaml" \
+        --format "${FORMAT}" --output "${RESULTS}"
 }
 
 main
