@@ -4,7 +4,7 @@ set -o pipefail
 set -u
 
 main() {
-    echo '--- Running scan'
+    echo '--- Running kubescape scan'
     if ! [ -x "$(command -v kubescape)" ]; then
         echo 'Error: kubescape is not installed.' >&2
         exit 1
